@@ -50,13 +50,23 @@ function Star() {
 
 function Accordion() {
     return <div>
-        <h3>Menu</h3>
+        <TitleMenu/>
+        <MenuList/>
+    </div>
+}
+
+function TitleMenu(){
+    return <h2>Menu</h2>
+}
+
+function MenuList(){
+    return (
         <ul>
-            <li>2</li>
             <li>1</li>
+            <li>2</li>
             <li>3</li>
         </ul>
-    </div>
+    )
 }
 
 export default App;
