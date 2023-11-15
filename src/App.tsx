@@ -9,13 +9,16 @@ function App() {
     <div className="App">
         <AppTitle title = {"te"}/>
         <Rating value={2}/>
-        <Accordion titleValue={"Ermek The Best"}/>
-        <Accordion titleValue={"The Best"}/>
+        <Accordion titleValue={"Ermek The Best"} collapsed = {false}/>
+        <Accordion titleValue={"The Best for West"} collapsed = {true}/>
     </div>
   );
 }
+type PageTitleProps = {
+    title: string;
+}
 
-function AppTitle (props: any) {
+function AppTitle (props: PageTitleProps) {
     return <h1>{props.title}</h1>
 }
 export default App;
